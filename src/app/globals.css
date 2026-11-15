@@ -1,0 +1,23 @@
+/* KEEP the Tailwind import line(s) that create-next-app put at the top of YOUR file:
+   Tailwind v4:  @import "tailwindcss";
+   Tailwind v3:  @tailwind base; @tailwind components; @tailwind utilities;  */
+@import "tailwindcss";
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-inter), var(--font-bn), system-ui, sans-serif;
+  background: #f1f5ef;
+  color: #16211b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+#সব-পণ্য { scroll-margin-top: 16px; }
+
+/* infinite price ticker */
+.ticker-track { animation: ticker 90s linear infinite; }
+.ticker-track:hover { animation-play-state: paused; }
+@keyframes ticker { to { transform: translateX(-50%); } }
